@@ -21,7 +21,7 @@ build:linux:
   tags:
     - linux
 
-build:macos:pbc:
+build:macos:
   <<: *build_definition
   tags:
     - macos
