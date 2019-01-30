@@ -21,7 +21,7 @@ build:linux:
   tags:
     - linux
 
-build:macos:
+.build:macos:
   <<: *build_definition
   tags:
     - macos
@@ -49,7 +49,7 @@ deploy:linux:
   dependencies:
     - build:linux
 
-deploy:macos:
+.deploy:macos:
   <<: *deploy_definition
   tags:
     - linux
